@@ -8,15 +8,19 @@ Introduction
 ------------
 
 The GHC has several language extensions for numeric literals:
-* `BinaryLiterals` (e.g. 0b1100)
-* `HexFloatLiterals` (e.g. 0x1fff.b0ffp3)
-* `NumericUnderscores` (e.g. 1_000_000)
+  * `BinaryLiterals` (e.g. 0b1100) Since GHC 7.10
+  * `HexFloatLiterals` (e.g. 0x1fff.b0ffp3) Since GHC 8.4
+  * `NumericUnderscores` (e.g. 1_000_000) Since GHC 8.6
 
 Here is the latest specification about them.
  * https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0009-numeric-underscores.rst#new-syntax-this-proposal
 
 If you need syntax highlighting about them, you can use the following definitions in each editors etc.
-I prepared two kinds of fast (approximated) version and exact version.
+I prepared two kinds of fast version and exact version.
+ * **Fast version**:
+   Pattern matching is approximate, but the response of the editor is fast.
+ * **Exact version**:
+   Pattern matching is accurate. You can check the lexers on the editor in real time without compiling.
 
 Contents
 --------
