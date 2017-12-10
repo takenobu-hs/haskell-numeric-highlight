@@ -32,15 +32,27 @@ Contents
 * Visual Studio Code
 * Pygments
 
+
 [Vim][vim1]
 -----------
 
 #### Fast version
-under construction
+Substituting `syntax/haskell.vim` as follows:
+```diff
+-syn match   hsNumber		"\<[0-9]\+\>\|\<0[xX][0-9a-fA-F]\+\>\|\<0[oO][0-7]\+\>"
+-syn match   hsFloat		"\<[0-9]\+\.[0-9]\+\([eE][-+]\=[0-9]\+\)\=\>"
++syn match   hsNumber		"\v<[0-9][0-9_]*>|<0[xX][0-9a-fA-F_]+>|<0[oO][0-7_]+>|<0[bB][01_]+>"
++syn match   hsFloat		"\v<[0-9][0-9_]*%(\.[0-9_]+%([eE][-+]?[0-9_]+)?>|[eE][-+]?[0-9_]+)>|<0[xX][0-9a-fA-F_]+%(\.[0-9a-fA-F_]+%([pP][-+]?[0-9_]+)?>|[pP][-+]?[0-9_]+)>"
+```
 
 #### Exact version
-under construction
-
+Substituting `syntax/haskell.vim` as follows:
+```diff
+-syn match   hsNumber		"\<[0-9]\+\>\|\<0[xX][0-9a-fA-F]\+\>\|\<0[oO][0-7]\+\>"
+-syn match   hsFloat		"\<[0-9]\+\.[0-9]\+\([eE][-+]\=[0-9]\+\)\=\>"
++syn match   hsNumber		"\v<[0-9]%(_*[0-9])*>|<0[xX]_*[0-9a-fA-F]%(_*[0-9a-fA-F])*>|<0[oO]_*%(_*[0-7])*>|<0[bB]_*[01]%(_*[01])*>"
++syn match   hsFloat		"\v<[0-9]%(_*[0-9])*\.[0-9]%(_*[0-9])*%(_*[eE][-+]?[0-9]%(_*[0-9])*)?>|<[0-9]%(_*[0-9])*_*[eE][-+]?[0-9]%(_*[0-9])*>|<0[xX]_*[0-9a-fA-F]%(_*[0-9a-fA-F])*\.[0-9a-fA-F]%(_*[0-9a-fA-F])*%(_*[pP][-+]?[0-9]%(_*[0-9])*)?>|<0[xX]_*[0-9a-fA-F]%(_*[0-9a-fA-F])*_*[pP][-+]?[0-9]%(_*[0-9])*>"
+```
 
 [language-haskell][atom1] for [Atom][atom2] and [linguist][atom3]
 -----------------------------------------------------------------
