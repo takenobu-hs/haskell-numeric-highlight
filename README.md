@@ -84,8 +84,21 @@ I will not prepare. Let's use the exact version.
 #### Exact version
 Substituting `pygments/lexers/haskell.py` as follows:
 ```diff
--xxx
-+yyy
+             #  Numbers
+-            (r'\d+[eE][+-]?\d+', Number.Float),
+-            (r'\d+\.\d+([eE][+-]?\d+)?', Number.Float),
+-            (r'0[oO][0-7]+', Number.Oct),
+-            (r'0[xX][\da-fA-F]+', Number.Hex),
+-            (r'\d+', Number.Integer),
++            (r'0[xX]_*[\da-fA-F](_*[\da-fA-F])*_*[pP][+-]?\d(_*\d)*', Number.Float),
++            (r'0[xX]_*[\da-fA-F](_*[\da-fA-F])*\.[\da-fA-F](_*[\da-fA-F])*(_*[pP][+-]?\d(_*\d)*)?', Number.Float),
++            (r'\d(_*\d)*_*[eE][+-]?\d(_*\d)*', Number.Float),
++            (r'\d(_*\d)*\.\d(_*\d)*(_*[eE][+-]?\d(_*\d)*)?', Number.Float),
++            (r'0[bB]_*[01](_*[01])*', Number.Bin),
++            (r'0[oO]_*[0-7](_*[0-7])*', Number.Oct),
++            (r'0[xX]_*[\da-fA-F](_*[\da-fA-F])*', Number.Hex),
++            (r'\d(_*\d)*', Number.Integer),
+             #  Character/String Literals
 ```
 
 
