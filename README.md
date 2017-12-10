@@ -93,7 +93,7 @@ Substituting `src/include/repository.coffee` as follows:
    ]
 ```
 
-Substituting `src/include/util.coffee` as follows:
+Furthermore, substituting `src/include/util.coffee` as follows:
 ```diff
  floatPattern = (digit, exp) ->
 -  exponent = "#{exp}[+-]?[0-9_]+"
