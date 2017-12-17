@@ -20,7 +20,7 @@ I prepared two kinds of fast version and exact version.
  * **Fast version**:
    Pattern matching is approximate, but the response of the editor is fast.
  * **Exact version**:
-   Pattern matching is accurate. You can check the lexers on the editor in real time without compiling.
+   Pattern matching is accurate. You can check the lexers on your editor in real time without compiling.
 
 Contents
 --------
