@@ -28,8 +28,9 @@ Contents
 * Vim
 * Emacs
 * Atom (and linguist)
-  * language-haskell
+  * language-haskell package
 * Visual Studio Code
+  * language-haskell extension
 * Pygments
 
 
@@ -104,14 +105,38 @@ Furthermore, substituting `src/include/util.coffee` as follows:
 ```
 
 
-[Visual Studio Code][vscode1]
+[language-haskell][vscode1] for [Visual Studio Code][vscode2]
 -----------------------------
 
 #### Fast version
-under construction
+Substituting `syntaxes/haskell.tmLanguage` as follows:
+```diff
+ 			<key>match</key>
+-			<string>\b([0-9]+\.[0-9]+([eE][+-]?[0-9]+)?|[0-9]+[eE][+-]?[0-9]+)\b</string>
++			<string>\b([0-9][0-9_]*(\.[0-9_]+([eE][-+]?[0-9_]+)?|[eE][-+]?[0-9_]+)|0[xX][0-9a-fA-F_]+(\.[0-9a-fA-F_]+([pP][-+]?[0-9_]+)?|[pP][-+]?[0-9_]+))\b</string>
+ 			<key>name</key>
+ 			<string>constant.numeric.float.haskell</string>
+ 		</dict>
+ 		<dict>
+ 			<key>match</key>
+-			<string>\b([0-9]+|0([xX][0-9a-fA-F]+|[oO][0-7]+))\b</string>
++			<string>\b([0-9][0-9_]*|0([xX][0-9a-fA-F_]+|[oO][0-7_]+|[bB][01_]+))\b</string>
+```
 
 #### Exact version
-under construction
+Substituting `syntaxes/haskell.tmLanguage` as follows:
+```diff
+ 			<key>match</key>
+-			<string>\b([0-9]+\.[0-9]+([eE][+-]?[0-9]+)?|[0-9]+[eE][+-]?[0-9]+)\b</string>
++			<string>\b([0-9](_*[0-9])*\.[0-9](_*[0-9])*(_*[eE][-+]?[0-9](_*[0-9])*)?|[0-9](_*[0-9])*_*[eE][-+]?[0-9](_*[0-9])*|0[xX]_*[0-9a-fA-F](_*[0-9a-fA-F])*\.[0-9a-fA-F](_*[0-9a-fA-F])*(_*[pP][-+]?[0-9](_*[0-9])*)?|0[xX]_*[0-9a-fA-F](_*[0-9a-fA-F])*_*[pP][-+]?[0-9](_*[0-9])*)\b</string>
+ 			<key>name</key>
+ 			<string>constant.numeric.float.haskell</string>
+ 		</dict>
+ 		<dict>
+ 			<key>match</key>
+-			<string>\b([0-9]+|0([xX][0-9a-fA-F]+|[oO][0-7]+))\b</string>
++			<string>\b([0-9](_*[0-9])*|0([xX]_*[0-9a-fA-F](_*[0-9a-fA-F])*|[oO]_*[0-7](_*[0-7])*|[bB]_*[01](_*[01])*))\b</string>
+```
 
 
 [Pygments][pygments1]
@@ -148,7 +173,8 @@ Substituting `pygments/lexers/haskell.py` as follows:
 [atom3]: https://github.com/github/linguist
 [atom4]: https://github.com/atom-haskell/language-haskell/releases/tag/v1.15.0
 
-[vscode1]: https://github.com/Microsoft/vscode
+[vscode1]: https://github.com/JustusAdam/language-haskell
+[vscode2]: https://github.com/Microsoft/vscode
 
 [pygments1]: http://pygments.org/
 
