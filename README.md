@@ -9,7 +9,7 @@ Introduction
 
 The GHC has several language extensions for numeric literals:
   * `BinaryLiterals` (e.g. 0b1100) Since GHC [7.10][trac9224]
-  * `HexFloatLiterals` (e.g. 0x1fff.b0ffp3) Since GHC [8.4][trac13126]
+  * `HexFloatLiterals` (e.g. 0x1fff.50ffp3) Since GHC [8.4][trac13126]
   * `NumericUnderscores` (e.g. 1_000_000) Since GHC [8.6][trac14473]
 
 Here is the latest specification about them.
