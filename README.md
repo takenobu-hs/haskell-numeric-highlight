@@ -62,7 +62,6 @@ Substituting `syntax/haskell.vim` as follows:
 
 #### Fast version
 Lowercase literals are already almost correctly displayed.
-
 The definition file is `haskell-lexeme.el`.
 
 #### Exact version
