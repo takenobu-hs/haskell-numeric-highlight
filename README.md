@@ -59,7 +59,9 @@ Substituting `syntax/haskell.vim` as follows:
 [haskell-mode][emacs1] for [Emacs][emacs2]
 ------------------------------------------
 
-Lowercase literals are already displayed correctly.
+#### Fast version
+Lowercase literals are already almost correctly displayed.
+
 The definition file is `haskell-lexeme.el`.
 
 
