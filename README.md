@@ -27,6 +27,7 @@ Contents
 
 * Vim
 * Emacs
+  * haskell-mode
 * Atom (and linguist)
   * language-haskell package
 * Visual Studio Code
@@ -54,6 +55,13 @@ Substituting `syntax/haskell.vim` as follows:
 +syn match   hsNumber		"\v<[0-9]%(_*[0-9])*>|<0[xX]_*[0-9a-fA-F]%(_*[0-9a-fA-F])*>|<0[oO]_*%(_*[0-7])*>|<0[bB]_*[01]%(_*[01])*>"
 +syn match   hsFloat		"\v<[0-9]%(_*[0-9])*\.[0-9]%(_*[0-9])*%(_*[eE][-+]?[0-9]%(_*[0-9])*)?>|<[0-9]%(_*[0-9])*_*[eE][-+]?[0-9]%(_*[0-9])*>|<0[xX]_*[0-9a-fA-F]%(_*[0-9a-fA-F])*\.[0-9a-fA-F]%(_*[0-9a-fA-F])*%(_*[pP][-+]?[0-9]%(_*[0-9])*)?>|<0[xX]_*[0-9a-fA-F]%(_*[0-9a-fA-F])*_*[pP][-+]?[0-9]%(_*[0-9])*>"
 ```
+
+[haskell-mode][emacs1] for [Emacs][emacs2]
+------------------------------------------
+
+Lowercase literals are already displayed correctly.
+The definition file is `haskell-lexeme.el`.
+
 
 [language-haskell][atom1] for [Atom][atom2] and [linguist][atom3]
 -----------------------------------------------------------------
@@ -167,6 +175,9 @@ Substituting `pygments/lexers/haskell.py` as follows:
 
 
 [vim1]: https://github.com/vim
+
+[emacs1]: https://github.com/haskell/haskell-mode
+[emacs2]: https://github.com/emacs-mirror/emacs
 
 [atom1]: https://github.com/atom-haskell/language-haskell
 [atom2]: https://github.com/atom/atom
