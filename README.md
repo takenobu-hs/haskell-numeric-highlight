@@ -60,12 +60,14 @@ Substituting `syntax/haskell.vim` as follows:
 [haskell-mode][emacs1] for [Emacs][emacs2]
 ------------------------------------------
 
+The definition files are `haskell-lexeme.el` and `haskell-font-lock.el`.
+
 #### Fast version
 Lowercase literals are already almost correctly displayed.
-The definition file is `haskell-lexeme.el`.
 
 #### Exact version
-It is probably slow.
+In the current implementation, numeric literals are not highlighted.
+It would be slow and complicated to implement correctly.
 
 
 [language-haskell][atom1] for [Atom][atom2] and [linguist][atom3]
