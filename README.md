@@ -56,6 +56,7 @@ Substituting `syntax/haskell.vim` as follows:
 +syn match   hsFloat		"\v<[0-9]%(_*[0-9])*\.[0-9]%(_*[0-9])*%(_*[eE][-+]?[0-9]%(_*[0-9])*)?>|<[0-9]%(_*[0-9])*_*[eE][-+]?[0-9]%(_*[0-9])*>|<0[xX]_*[0-9a-fA-F]%(_*[0-9a-fA-F])*\.[0-9a-fA-F]%(_*[0-9a-fA-F])*%(_*[pP][-+]?[0-9]%(_*[0-9])*)?>|<0[xX]_*[0-9a-fA-F]%(_*[0-9a-fA-F])*_*[pP][-+]?[0-9]%(_*[0-9])*>"
 ```
 
+
 [haskell-mode][emacs1] for [Emacs][emacs2]
 ------------------------------------------
 
@@ -63,6 +64,9 @@ Substituting `syntax/haskell.vim` as follows:
 Lowercase literals are already almost correctly displayed.
 
 The definition file is `haskell-lexeme.el`.
+
+#### Exact version
+It is probably slow.
 
 
 [language-haskell][atom1] for [Atom][atom2] and [linguist][atom3]
