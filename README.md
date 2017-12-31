@@ -48,6 +48,9 @@ Substituting `syntax/haskell.vim` as follows:
 ```
 
 #### Exact version
+
+It has already been officially implemented. Since [patch 8.0.1401][vim2]
+
 Substituting `syntax/haskell.vim` as follows:
 ```diff
 -syn match   hsNumber		"\<[0-9]\+\>\|\<0[xX][0-9a-fA-F]\+\>\|\<0[oO][0-7]\+\>"
@@ -182,6 +185,7 @@ Substituting `pygments/lexers/haskell.py` as follows:
 
 
 [vim1]: https://github.com/vim
+[vim2]: https://github.com/vim/vim/commit/f0b03c4e98f8a7184d8b4a5d702cbcd602426923
 
 [emacs1]: https://github.com/haskell/haskell-mode
 [emacs2]: https://github.com/emacs-mirror/emacs
