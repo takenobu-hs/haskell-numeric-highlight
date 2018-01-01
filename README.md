@@ -126,19 +126,7 @@ Furthermore, substituting `src/include/util.coffee` as follows:
 -----------------------------
 
 #### Fast version
-Substituting `syntaxes/haskell.tmLanguage` as follows:
-```diff
- 			<key>match</key>
--			<string>\b([0-9]+\.[0-9]+([eE][+-]?[0-9]+)?|[0-9]+[eE][+-]?[0-9]+)\b</string>
-+			<string>\b([0-9][0-9_]*(\.[0-9_]+([eE][-+]?[0-9_]+)?|[eE][-+]?[0-9_]+)|0[xX][0-9a-fA-F_]+(\.[0-9a-fA-F_]+([pP][-+]?[0-9_]+)?|[pP][-+]?[0-9_]+))\b</string>
- 			<key>name</key>
- 			<string>constant.numeric.float.haskell</string>
- 		</dict>
- 		<dict>
- 			<key>match</key>
--			<string>\b([0-9]+|0([xX][0-9a-fA-F]+|[oO][0-7]+))\b</string>
-+			<string>\b([0-9][0-9_]*|0([xX][0-9a-fA-F_]+|[oO][0-7_]+|[bB][01_]+))\b</string>
-```
+Let's use the exact version.
 
 #### Exact version
 It has already been officially implemented. [Here][vscode3]
