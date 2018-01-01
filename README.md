@@ -185,7 +185,7 @@ Substituting `pygments/lexers/haskell.py` as follows:
 
 
 [vim1]: https://github.com/vim
-[vim2]: https://github.com/vim/vim/commit/f0b03c4e98f8a7184d8b4a5d702cbcd602426923
+[vim2]: https://github.com/vim/vim/commit/f0b03c4e98f8a7184d8b4a5d702cbcd602426923#diff-6f4249d02b81f2e8cbd2b0927aad21ce
 
 [emacs1]: https://github.com/haskell/haskell-mode
 [emacs2]: https://github.com/emacs-mirror/emacs
