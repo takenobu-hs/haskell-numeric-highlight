@@ -28,7 +28,7 @@ Contents
 * Vim
 * Emacs
   * haskell-mode
-* Atom (and linguist)
+* Atom (and Linguist)
   * language-haskell package
 * Visual Studio Code
   * language-haskell extension
@@ -72,7 +72,7 @@ In the current implementation, numeric literals are not highlighted.
 It would be slow and complicated to implement correctly.
 
 
-[language-haskell][atom1] for [Atom][atom2] and [linguist][atom3]
+[language-haskell][atom1] for [Atom][atom2] and [Linguist][atom3]
 -----------------------------------------------------------------
 
 #### Fast version
