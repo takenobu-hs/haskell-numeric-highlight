@@ -48,7 +48,6 @@ Substituting `syntax/haskell.vim` as follows:
 ```
 
 #### Exact version
-
 It has already been officially implemented. Since [patch 8.0.1401][vim2]
 
 Substituting `syntax/haskell.vim` as follows:
@@ -142,6 +141,8 @@ Substituting `syntaxes/haskell.tmLanguage` as follows:
 ```
 
 #### Exact version
+It has already been officially implemented. [Here][vscode3]
+
 Substituting `syntaxes/haskell.tmLanguage` as follows:
 ```diff
  			<key>match</key>
@@ -197,6 +198,7 @@ Substituting `pygments/lexers/haskell.py` as follows:
 
 [vscode1]: https://github.com/JustusAdam/language-haskell
 [vscode2]: https://github.com/Microsoft/vscode
+[vscode3]: https://github.com/JustusAdam/language-haskell/commit/1399b0e869a880c5e9b58119bee793bfdadfd2eb
 
 [pygments1]: http://pygments.org/
 
