@@ -32,6 +32,8 @@ Contents
   * language-haskell package
 * Visual Studio Code
   * language-haskell extension
+* Sublime Text 3
+  * SublimeHaskell
 * Pygments
 
 
@@ -146,6 +148,13 @@ Substituting `syntaxes/haskell.tmLanguage` as follows:
 ```
 
 
+[SublimeHaskell][sublime1] for [Sublime Text 3][sublime2]
+---------------------------------------------------------
+
+#### Fast version
+It has already been officially implemented by B. Scott Michel. Since [2.1.23][sublime3]
+
+
 [Pygments][pygments1]
 ---------------------
 
@@ -188,6 +197,10 @@ Substituting `pygments/lexers/haskell.py` as follows:
 [vscode1]: https://github.com/JustusAdam/language-haskell
 [vscode2]: https://github.com/Microsoft/vscode
 [vscode3]: https://github.com/JustusAdam/language-haskell/commit/1399b0e869a880c5e9b58119bee793bfdadfd2eb
+
+[sublime1]: https://github.com/SublimeHaskell/SublimeHaskell
+[sublime2]: https://www.sublimetext.com/
+[sublime3]: https://github.com/SublimeHaskell/SublimeHaskell/commit/9d0ec10e9c9380570b8b1308bcb4c7e38cc5b092
 
 [pygments1]: http://pygments.org/
 
