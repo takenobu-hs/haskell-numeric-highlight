@@ -76,7 +76,7 @@ It would be slow and complicated to implement correctly.
 -----------------------------------------------------------------
 
 #### Fast version
-It has already been officially implemented. Since [1.15.0][atom4]
+It has already been officially implemented. Since [1.15.0][atom4] and linguist [6.0.0][atom5]
 
 
 #### Exact version
@@ -183,6 +183,7 @@ Substituting `pygments/lexers/haskell.py` as follows:
 [atom2]: https://github.com/atom/atom
 [atom3]: https://github.com/github/linguist
 [atom4]: https://github.com/atom-haskell/language-haskell/releases/tag/v1.15.0
+[atom5]: https://github.com/github/linguist/releases/tag/v6.0.0
 
 [vscode1]: https://github.com/JustusAdam/language-haskell
 [vscode2]: https://github.com/Microsoft/vscode
